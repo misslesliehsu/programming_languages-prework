@@ -9,6 +9,7 @@ def reformat_languages(languages)
     languages_hash.each do |language_key, type_hash| #ruby => {type=>compiled}
       if new_hash.include?(language_key)
         new_hash[language_key][type_hash][:style] << style_key
+        binding.pry
       else
         type_hash[:style] = [style_key]
         new_hash[language_key] = type_hash
