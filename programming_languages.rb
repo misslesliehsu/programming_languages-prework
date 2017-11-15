@@ -5,7 +5,7 @@
 require 'pry'
 def reformat_languages(languages)
   new_hash = {}
-  binding_pry
+  binding.pry
   languages.each do |style_key, languages_hash| #oo => {ruby=>{type=>compiled}, javascript =>{type=>interpreted}}
     languages_hash.each do |language_key, type_hash| #ruby => {type=>compiled}
       if new_hash.include?(language_key)
