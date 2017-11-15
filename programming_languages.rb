@@ -11,5 +11,5 @@ def reformat_languages(languages)
       new_hash[language_key] = type_hash
       end
    end
-
+   new_hash
 end
