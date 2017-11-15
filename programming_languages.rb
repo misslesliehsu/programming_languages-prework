@@ -13,8 +13,7 @@ def reformat_languages(languages)
         type_hash[:style] = [style_key]
         new_hash[language_key] = type_hash
       end
-   end
- end
+    end
+  end
    new_hash
-   binding.pry
 end
