@@ -9,7 +9,8 @@ def reformat_languages(languages)
     languages_hash.each do |language_key, type_hash| #ruby => {type=>compiled}
       new_hash[language_key] = type_hash
       binding.pry
-            
+      end
    end
-   
+
 end
+
